@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>N181056</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="polling.css">
+	<script src="polling.js"></script>
+</head>
+<body>
+
+	<div id="left">
+		<div class="d1">
+			<ul>
+				<li><button class="b"><b class="text">Congress</b><img src="1.png" class="party"></button></li>
+				<li><button class="b"><b class="text">BJP</b><img src="2.png" class="party"></button></li>
+				<li><button class="b"><b class="text">TDP</b><img src="3.png" class="party"></button></li>
+				<li><button class="b"><b class="text">YSR Congress</b><img src="4.png" class="party"></button></li>
+				<li><button class="b"><b class="text">Loksatha</b><img src="5.png" class="party"></button></li>
+				<li><button class="b"><b class="text">CPM</b><img src="6.png" class="party"></button></li>
+				<li><button class="b"><b class="text">TRS</b><img src="7.png" class="party"></button></li>
+				<li><button class="b"><b class="text">PRP</b><img src="8.png" class="party"></button></li>
+				<li><button class="b"></button></li>
+				<li><button class="b"></button></li>
+			</ul>
+			
+		</div>
+		<div class="d2">
+			<h4>Ballot Unit</h4>
+			<div id="area1" class="b1"><img id="img1" src="left.png"><button class="active" id="but1" onclick="voteOn(1)"></button></div>
+				<div id="area2" class="b1"><img id="img2" src="left.png"><button class="active" id="but2" onclick="voteOn(2)"></button></div>
+				<div id="area3" class="b1"><img id="img3" src="left.png"><button class="active" id="but3" onclick="voteOn(3)"></button></div>
+				<div id="area4" class="b1"><img id="img4" src="left.png"><button class="active" id="but4" onclick="voteOn(4)"></button></div>
+				<div id="area5" class="b1"><img id="img5" src="left.png"><button class="active" id="but5" onclick="voteOn(5)"></button></div>
+				<div id="area6" class="b1"><img id="img6" src="left.png"><button class="active" id="but6" onclick="voteOn(6)"></button></div>
+				<div id="area7" class="b1"><img id="img7" src="left.png"><button class="active" id="but7" onclick="voteOn(7)"></button></div>
+				<div id="area8" class="b1"><img id="img8" src="left.png"><button class="active" id="but8" onclick="voteOn(8)"></button></div>
+				<div class="b1"><img src="left.png"><button class="not" style="background-color: #818084;"></button></div>
+				<div class="b1"><img src="left.png"><button class="not" style="background-color: #818084"></button></div>
+			</div>
+		
+		
+	</div>
+	<div id="right">
+		<div id="display"><img id="selectImg" src="default.png" width="50px" height="50px"><label id="votescountVar"></label></div>
+		<div class="radio" id="power"><label class="label">power</label></div>
+		<button class="powerButton" id="green" onclick="shutdown()"><img src="power.png" height="25px" width="25px"></button>
+		<button class="reset" id="reset" onclick="resetVotes()"><i style="font-size:20px;letter-spacing: 2px;color: white;">Reset</i></button>
+		<button class="count" id="count" onclick="enableCounting()" ><i style="font-size:20px;letter-spacing: 2px;color: white;">Count</i></button>
+		<button class="button1" id="voteConfirm" onclick="voteConfirmfun()" ><b style="color: green">&check;</b></button>
+		<button class="button2" id="voteCancel" onclick="voteCancelfun()" ><b style="color:red">&cross;</b></button>
+		
+		<button class="button3" id="mark1" onclick="shownewWIN()" disabled><b style="color:green">&check;</b></button>
+		<button class="button4" id="mark2" onclick="closenewWIN()" disabled><b style="color: red">&cross;</b></button>
+		<button class="button5" id="mark4" onclick="prevParty()" disabled><b>&#8678;</b></button>
+		<button class="button6" id="mark3" onclick="nextParty()" disabled><b>&#8680;</b></button>
+		
+	</div>
+
+</body>
+</html>
